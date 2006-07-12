@@ -34,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack kchmviewer-2.5-X-src.tar.bz2
+  unpack kchmviewer-2.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kchmviewer-2.5-X.cygport all
+  cygport ./kchmviewer-2.6-X.cygport all
 
 This will create:
-  /usr/src/kchmviewer-2.5-X-src.tar.bz2
-  /usr/src/kchmviewer-2.5-X.tar.bz2
+  /usr/src/kchmviewer-2.6-X-src.tar.bz2
+  /usr/src/kchmviewer-2.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,10 +52,10 @@ Files included in the binary package:
   /usr/lib/kde3/kio_msits.dll
   /usr/lib/kde3/kio_msits.la
   /usr/share/applnk/kchmviewer.desktop
-  /usr/share/doc/Cygwin/kchmviewer-2.5.README
-  /usr/share/doc/kchmviewer-2.5/COPYING
-  /usr/share/doc/kchmviewer-2.5/ChangeLog
-  /usr/share/doc/kchmviewer-2.5/README
+  /usr/share/doc/Cygwin/kchmviewer-2.6.README
+  /usr/share/doc/kchmviewer-2.6/COPYING
+  /usr/share/doc/kchmviewer-2.6/ChangeLog
+  /usr/share/doc/kchmviewer-2.6/README
   /usr/share/icons/crystalsvg/128x128/apps/kchmviewer.png
   /usr/share/icons/crystalsvg/48x48/apps/kchmviewer.png
   /usr/share/icons/crystalsvg/64x64/apps/kchmviewer.png
@@ -64,6 +64,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.6-1 -----
+Version bump.
 
 ----- version 2.5-1 -----
 Version bump with KDE support enabled.
