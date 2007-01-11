@@ -1,6 +1,6 @@
 category: KDE Text
 requires: cygwin kdelibs4 libchm0 qt3
-sdesc: "CHM (MS Help) viewer for KDE"
+sdesc: "KDE CHM (MS Help) viewer"
 ldesc: "KchmViewer is a chm (MS HTML help file format) viewer, written
 in C++. Unlike most existing CHM viewers for Unix, it uses Trolltech Qt
 widget library, and does not depend on KDE or Gnome. However, it may be
