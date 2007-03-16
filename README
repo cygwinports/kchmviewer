@@ -6,18 +6,18 @@ library, and does not depend on KDE or Gnome. However, it may be
 compiled with full KDE support, including KDE widgets and KIO/KHTML.
 
 Runtime requirements:
-  cygwin-1.5.23-2
-  kdelibs4-3.5.5-1
-  libchm0-0.38-2
+  cygwin-1.5.24-2
+  kdelibs4-3.5.6-1
+  libchm0-0.39-1
   qt3-3.3.7-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.7-1.7.9-1
   binutils-20060817-1
-  cygport-0.2.8-1
+  cygport-0.3.0-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -29,20 +29,20 @@ Canonical website:
   http://www.kchmviewer.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/kchmviewer/
+  http://downloads.sourceforge.net/kchmviewer/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kchmviewer-2.7-X-src.tar.bz2
+  unpack kchmviewer-3.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kchmviewer-2.7-X.cygport all
+  cygport ./kchmviewer-3.0-X.cygport all
 
 This will create:
-  /usr/src/kchmviewer-2.7-X-src.tar.bz2
-  /usr/src/kchmviewer-2.7-X.tar.bz2
+  /usr/src/kchmviewer-3.0-X-src.tar.bz2
+  /usr/src/kchmviewer-3.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,18 +53,28 @@ Files included in the binary package:
   /usr/lib/kde3/kio_msits.dll
   /usr/lib/kde3/kio_msits.la
   /usr/share/applnk/kchmviewer.desktop
-  /usr/share/doc/Cygwin/kchmviewer-2.7.README
-  /usr/share/doc/kchmviewer-2.7/COPYING
-  /usr/share/doc/kchmviewer-2.7/ChangeLog
-  /usr/share/doc/kchmviewer-2.7/README
+  /usr/share/doc/Cygwin/kchmviewer-3.0.README
+  /usr/share/doc/kchmviewer-3.0/COPYING
+  /usr/share/doc/kchmviewer-3.0/ChangeLog
+  /usr/share/doc/kchmviewer-3.0/FAQ
+  /usr/share/doc/kchmviewer-3.0/README
   /usr/share/icons/crystalsvg/128x128/apps/kchmviewer.png
   /usr/share/icons/crystalsvg/48x48/apps/kchmviewer.png
   /usr/share/icons/crystalsvg/64x64/apps/kchmviewer.png
+  /usr/share/locale/cs/LC_MESSAGES/kchmviewer.mo
+  /usr/share/locale/du/LC_MESSAGES/kchmviewer.mo
+  /usr/share/locale/fr/LC_MESSAGES/kchmviewer.mo
+  /usr/share/locale/ru/LC_MESSAGES/kchmviewer.mo
+  /usr/share/locale/tr/LC_MESSAGES/kchmviewer.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/kchmviewer.mo
   /usr/share/services/msits.protocol
 
 ------------------
 
 Port Notes:
+
+----- version 3.0-1 -----
+Version bump.
 
 ----- version 2.7-1 -----
 Version bump.
