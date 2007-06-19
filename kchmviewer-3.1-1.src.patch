@@ -1,0 +1,36 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x 'libtool.m4.in*' -x configure.bak -x configure.files -x acinclude.m4 -x subdirs -x configure.in -x admin origsrc/kchmviewer-3.1/lib/kio-msits/Makefile.am src/kchmviewer-3.1/lib/kio-msits/Makefile.am
+--- origsrc/kchmviewer-3.1/lib/kio-msits/Makefile.am	2007-03-07 13:50:41.000000000 -0600
++++ src/kchmviewer-3.1/lib/kio-msits/Makefile.am	2007-06-18 07:19:46.375000000 -0500
+@@ -1,11 +1,11 @@
+ METASOURCES = AUTO
+-INCLUDES = $(QT_INCLUDES) $(CHM_INCLUDES) $(KDE_INCLUDES) $(LIBCHMFILE_INCLUDES)
++INCLUDES = $(CHM_INCLUDES) $(all_includes) $(LIBCHMFILE_INCLUDES)
+ 
+ kde_module_LTLIBRARIES = kio_msits.la
+ 
+ kio_msits_la_SOURCES = msits.cpp
+-kio_msits_la_LIBADD = -lkio $(CHM_LIBS)
+-kio_msits_la_LDFLAGS = -module -avoid-version $(QT_LIBS) $(KDE_LDFLAGS) $(KDE_LIBS) $(KDE_PLUGIN)
++kio_msits_la_LIBADD = $(LIB_KIO) $(LIB_KDECORE) $(LIB_QT) $(CHM_LIBS)
++kio_msits_la_LDFLAGS = -module $(KDE_PLUGIN) $(all_libraries)
+ 
+ protocol_DATA = msits.protocol
+ protocoldir = $(kde_servicesdir)
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x 'libtool.m4.in*' -x configure.bak -x configure.files -x acinclude.m4 -x subdirs -x configure.in -x admin origsrc/kchmviewer-3.1/lib/libchmfile/Makefile.am src/kchmviewer-3.1/lib/libchmfile/Makefile.am
+--- origsrc/kchmviewer-3.1/lib/libchmfile/Makefile.am	2007-06-16 20:54:14.000000000 -0500
++++ src/kchmviewer-3.1/lib/libchmfile/Makefile.am	2007-06-18 07:18:16.281250000 -0500
+@@ -1,4 +1,4 @@
+-lib_LIBRARIES=libchmfile.a
++noinst_LIBRARIES=libchmfile.a
+ libchmfile_a_SOURCES = libchmfile.cpp libchmfile_search.cpp libchmfileimpl.cpp \
+ 	libchmtextencoding.cpp libchmtocimage.cpp
+ noinst_HEADERS = libchmfile.h bitfiddle.h libchmfileimpl.h libchmtextencoding.h \
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x 'libtool.m4.in*' -x configure.bak -x configure.files -x acinclude.m4 -x subdirs -x configure.in -x admin origsrc/kchmviewer-3.1/src/kde/Makefile.am src/kchmviewer-3.1/src/kde/Makefile.am
+--- origsrc/kchmviewer-3.1/src/kde/Makefile.am	2007-03-12 23:22:37.000000000 -0500
++++ src/kchmviewer-3.1/src/kde/Makefile.am	2007-06-18 07:21:11.937500000 -0500
+@@ -1,4 +1,4 @@
+-lib_LIBRARIES=libkdeextra.a
++noinst_LIBRARIES=libkdeextra.a
+ libkdeextra_a_SOURCES = kchmdcopiface.cpp kchmdcopiface.skel kchmviewwindow_khtmlpart.cpp
+ noinst_HEADERS = kchmdcopiface.h kchmviewwindow_khtmlpart.h
+ 

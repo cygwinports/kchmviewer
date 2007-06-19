@@ -1,0 +1,17 @@
+inherit kde3
+
+DESCRIPTION="KDE MS HTML Help viewer"
+HOMEPAGE="http://www.kchmviewer.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}-2.tar.gz"
+
+CYGCONF_ARGS="--with-kde"
+
+DIFF_EXCLUDES="admin"
+
+src_compile() {
+	cd ${S}
+	cp -u /usr/share/apps/kapptemplate/admin/* admin/
+	kde3_autoreconf
+	cd ${B}
+	kde3_compile
+}

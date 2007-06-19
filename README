@@ -7,17 +7,17 @@ compiled with full KDE support, including KDE widgets and KIO/KHTML.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  kdelibs4-3.5.6-1
+  kdelibs4-3.5.7-1
   libchm0-0.39-1
-  qt3-3.3.7-1
+  qt3-3.3.8-1
 
 Build requirements:
 (besides corresponding devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.7-1.7.9-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.0-1
+  cygport-0.3.1-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -72,6 +72,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 3.0-1 -----
+Version bump.
 
 ----- version 3.0-1 -----
 Version bump.
