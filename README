@@ -8,11 +8,11 @@ Runtime requirements:
   cygwin-1.7.0-50
   libchm0-0.40-1
   libgcc1-4.3.2-2
-  libQtCore4-4.5.1-1
-  libQtDBus4-4.5.1-1
-  libQtGui4-4.5.1-1
-  libQtNetwork4-4.5.1-1
-  libQtWebKit4-4.5.1-1
+  libQtCore4-4.5.2-1
+  libQtDBus4-4.5.2-1
+  libQtGui4-4.5.2-1
+  libQtNetwork4-4.5.2-1
+  libQtWebKit4-4.5.2-1
   libstdc++6-4.3.2-2
 
 Build requirements:
@@ -32,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack kchmviewer-4.0-X-src.tar.bz2
+  unpack kchmviewer-4.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kchmviewer-4.0-X.cygport all
+  cygport ./kchmviewer-4.1-X.cygport all
 
 This will create:
-  /usr/src/kchmviewer-4.0-X-src.tar.bz2
-  /usr/src/kchmviewer-4.0-X.tar.bz2
+  /usr/src/kchmviewer-4.1-X-src.tar.bz2
+  /usr/src/kchmviewer-4.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,7 +61,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 4.0-1 -----
+----- version 4.1-1 -----
 Initial release for Cygwin 1.7.
 KDE support is disabled, since okular now supports .chm files, and
 provides the same kioslave as this would.
