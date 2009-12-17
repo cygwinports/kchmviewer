@@ -3,14 +3,10 @@ inherit qt4-qmake
 DESCRIPTION="Qt4 MS HTML Help viewer"
 HOMEPAGE="http://www.kchmviewer.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_DIR="build-${PV}"
 
 src_install() {
 	dobin ${B}/bin/kchmviewer.exe
-
-	for i in 48 64 128
-	do
-		insinto /usr/share/icons/hicolor/${i}x${i}/apps
-		newins ${S}/src/kde/cr${i}-app-${PN}.png ${PN}.png
-	done
-	domenu ${S}/src/kde/kchmviewer.desktop
+	domenu ${S}/packages/kchmviewer.desktop
+	doicon ${S}/packages/kchmviewer.png
 }
