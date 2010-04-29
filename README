@@ -5,20 +5,20 @@ Unlike most existing CHM viewers for Unix, it uses Trolltech Qt widget
 library, and does not depend on KDE or Gnome.
 
 Runtime requirements:
-  cygwin-1.7.0-67
+  cygwin-1.7.5-1
   libchm0-0.40-1
   libgcc1-4.3.4-3
-  libQtCore4-4.5.3-2
-  libQtDBus4-4.5.3-2
-  libQtGui4-4.5.3-2
-  libQtNetwork4-4.5.3-2
-  libQtWebKit4-4.5.3-2
+  libQtCore4-4.6.2-1
+  libQtDBus4-4.6.2-1
+  libQtGui4-4.6.2-1
+  libQtNetwork4-4.6.2-1
+  libQtWebKit4-4.6.2-1
   libstdc++6-4.3.4-3
 
 Build requirements:
 (besides corresponding devel packages)
-  binutils-2.19.51-1
-  cygport-0.9.10-1
+  binutils-2.20.51-1
+  cygport-0.9.83-1
   gcc4-core-4.3.4-3
   gcc4-g++-4.3.4-3
   make-3.81-2
@@ -32,19 +32,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack kchmviewer-5.1-X-src.tar.bz2
+  unpack kchmviewer-5.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kchmviewer-5.1-X.cygport all
+  cygport ./kchmviewer-5.2-X.cygport all
 
 This will create:
-  /usr/src/kchmviewer-5.1-X-src.tar.bz2
-  /usr/src/kchmviewer-5.1-X.tar.bz2
+  /usr/src/kchmviewer-5.2-X-src.tar.bz2
+  /usr/src/kchmviewer-5.2-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 5.2-1 -----
+Version bump.
 
 ----- version 5.1-1 -----
 Version bump.
