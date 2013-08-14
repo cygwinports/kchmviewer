@@ -1,0 +1,18 @@
+inherit qt4-qmake
+
+NAME="kchmviewer"
+VERSION=6.0
+RELEASE=1
+CATEGORY="Text"
+SUMMARY="Qt4 CHM (MS Help) viewer"
+DESCRIPTION="KchmViewer is a chm (MS HTML help file format) viewer, written
+in C++. Unlike most existing CHM viewers for Unix, it uses Trolltech Qt widget
+library, and does not depend on KDE or Gnome."
+HOMEPAGE="http://www.kchmviewer.net/"
+SRC_URI="mirror://sourceforge/kchmviewer/kchmviewer-${VERSION}.tar.gz"
+
+src_install() {
+	dobin ${B}/bin/kchmviewer.exe
+	domenu ${S}/packages/kchmviewer.desktop
+	doicon ${S}/packages/kchmviewer.png
+}
