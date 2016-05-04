@@ -1,7 +1,7 @@
 inherit qt4-qmake
 
 NAME="kchmviewer"
-VERSION=6.0
+VERSION=7.5
 RELEASE=1
 CATEGORY="Text"
 SUMMARY="Qt4 CHM (MS Help) viewer"
@@ -10,6 +10,9 @@ in C++. Unlike most existing CHM viewers for Unix, it uses Trolltech Qt widget
 library, and does not depend on KDE or Gnome."
 HOMEPAGE="http://www.kchmviewer.net/"
 SRC_URI="mirror://sourceforge/kchmviewer/kchmviewer-${VERSION}.tar.gz"
+PATCH_URI="
+	7.5-cygwin-lX11.patch
+"
 
 src_install() {
 	dobin ${B}/bin/kchmviewer.exe
