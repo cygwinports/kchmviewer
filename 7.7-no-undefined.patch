@@ -1,0 +1,27 @@
+--- origsrc/kchmviewer-7.7/src/src.pro	2016-10-05 02:35:34.149265000 -0500
++++ src/kchmviewer-7.7/src/src.pro	2017-07-21 16:13:27.034821200 -0500
+@@ -40,7 +40,6 @@ SOURCES += config.cpp \
+     textencodings.cpp \
+     treeitem_toc.cpp \
+     treeitem_index.cpp
+-LIBS += -lchm -lzip
+ TARGET = ../bin/kchmviewer
+ CONFIG += threads \
+     warn_on \
+@@ -67,7 +66,7 @@ QT += webkit \
+     webkitwidgets \
+     printsupport
+ 
+-linux-g++*:{
++cygwin-g++*|linux-g++*:{
+     LIBS += -lX11
+ }
+ 
+@@ -111,6 +110,7 @@ unix:!macx: {
+     LIBS += ../lib/libebook/libebook.a
+     POST_TARGETDEPS += ../lib/libebook/libebook.a
+ }
++LIBS += -lchm -lzip
+ 
+ greaterThan(QT_MAJOR_VERSION, 4) {
+     # Qt 5

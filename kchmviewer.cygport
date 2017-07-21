@@ -1,7 +1,7 @@
-inherit qt4-qmake
+inherit qt5-qmake
 
 NAME="kchmviewer"
-VERSION=7.5
+VERSION=7.7
 RELEASE=1
 CATEGORY="Text"
 SUMMARY="Qt4 CHM (MS Help) viewer"
@@ -11,7 +11,8 @@ library, and does not depend on KDE or Gnome."
 HOMEPAGE="http://www.kchmviewer.net/"
 SRC_URI="mirror://sourceforge/kchmviewer/kchmviewer-${VERSION}.tar.gz"
 PATCH_URI="
-	7.5-cygwin-lX11.patch
+	7.7-no-undefined.patch
+	7.7-webkit.patch
 "
 
 src_install() {
