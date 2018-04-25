@@ -2,7 +2,7 @@ inherit qt5-qmake
 
 NAME="kchmviewer"
 VERSION=7.7
-RELEASE=1
+RELEASE=2
 CATEGORY="Text"
 SUMMARY="Qt4 CHM (MS Help) viewer"
 DESCRIPTION="KchmViewer is a chm (MS HTML help file format) viewer, written
